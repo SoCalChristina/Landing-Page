@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+   integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Wu Fuego Landing Page</title>
+</head>
+<!-- Begin Body -->
+<body>
+  <div class="container">
+<!--User Story #1: My product landing page should have a header element with a corresponding id="header".-->
+    <header id="header" class="row">
+      <div id="brand-wrapper" class="row">
+      <div id ="header-logo" class="col item">
+<!--User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.-->
+        <img id="header-img" class="logo" src="images/wu-fuego-logo-125x135.png" alt="WU Fuego Logo"/>
+      </div>
+      <div id="header-brand" class="col item">
+        <h1 id="title">Feel The Fuego!</h1>
+      </div>
+      </div>
+  <!--User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".-->
+      <nav id="nav-bar" class="row">
+        <ul class="navigation">
+<!--User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+User Story -->
+          <li class="nav-item">
+<!-- #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.-->
+
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#social-media">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+<!--
+** End Header section
+-->
+<!-- Begin Main Section -->
+  <div id="main" class="row">
+    <div id="home">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Join WU Fuego</h1>
+          <p>And feel the fuego!</p>
+<!--User Story #7: My landing page has a form element with a corresponding id="form".-->
+<!-- User Story #12: When I click the #submit element, the email is submitted to a
+static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.-->
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+<!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.-->
+        <input
+         name="email"
+         id="email"
+         class="inputs"
+         type="email"
+         placeholder="example@email.com"
+         required/>
+      <div id="form-button">
+<!--User Story #11: Within the form, there is a submit input with a corresponding id="submit".-->
+     <input id="submit" type="submit" value="Get Started" class="button" />
+         </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--
+** End Hero Section
+-->
+
+
+  <!--
+  ***  Begin Profile/ About Section ***
+  -->
+
+  <div id="about" class="cards">
+    <div class="row break">
+      <h2 class="col-12">About Us</h2>
+    </div>
+    <section class="card">
+    <div id="card-header">
+      <img src="images/front-view.jpg" alt="WU Fuego Dancers"/>
+    </div>
+    <ul>
+      <li><h2>Sweet Roll Bonbon.</h2></li>
+      <li><p class="title">Carrot Cake</p></li>
+      <li><p>I love jelly beans dessert gummi bears dragée cake.</p></li>
+      <li><p>example@example.com</p></li>
+    </ul>
+    <div class="card-button">
+    <button class="button">Contact</button>
+    </div>
+    </section>
+
+    <section class="card"> <!-- add big-card class to make card stand out -->
+    <div id="card-header">
+      <img src="images/salsa-rise-2.jpg" alt="WU Fuego Dancers"/>
+    </div>
+    <ul>
+      <li><h2>I love sweet roll jelly</h2></li>
+      <li><p class="title">Cheesecake pop</p></li>
+      <li><p>Gummies marzipan dragée. Sweet I love jelly.</p></li>
+      <li><p>example@example.com</p></li>
+    </ul>
+    <div class="card-button">
+    <button class="button">Contact</button>
+    </div>
+  </section>
+
+    <section class="card">
+    <div id="card-header">
+      <img src="images/back-view.jpg" alt="WU Fuego Dancers"/>
+    </div>
+    <ul>
+      <li><h2>Wafer I love caramels</h2></li>
+      <li><p class="title">Tart macaroon</p></li>
+      <li><p>sugar plum jelly-o powder fruitcake I love sugar.</p></li>
+      <li><p>example@example.com</p></li>
+    </ul>
+    <div class="card-button">
+    <button class="button">Contact</button>
+    </div>
+  </section>
+
+  </div>
+  <!--
+  ***  End  Profile/About Section ***
+  -->
+
+<!--
+** Begin Video Section
+-->
+  <div class="row break">
+    <h2 class="col-12">What We Do</h2>
+    <p class="col-12">WU Fuego members dance at (enter event name here) - St. Louis, MO. <small>Video by Jonah Goldberg</small></p>
+  </div>
+
+  <div class="iframe-container">
+
+<!--User Story #6: I can watch an embedded product video with id="video".-->
+    <iframe id="video" src="https://www.youtube.com/embed/GCrW3VZQaww" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+<!--
+** End Video Section
+ -->
+
+<!--
+** Newsletter Form
+ -->
+    <div class="row break">
+      <h2>Our Events</h2>
+    </div>
+    <form id="newsletter-form" class="forms">
+      <fieldset>
+        <legend>Newsletter</legend>
+          <h3 class="col-12"><em>Subscribe to our newsletter hear about our upcoming events!</em></h3>
+          <div class="fields">
+            <label for="newsletter" class="labels col-4">
+              <strong>Email Address</strong>
+              <abbr title="required">*</abbr>
+              <input id="newsletter" type="email" class="inputs" placeholder="example@email.com" aria-label="* Please enter an email address to continue" required/>
+            </label>
+          </div>
+<!-- Begin form submit button -->
+        <div id="newsletter-button">
+          <button id="email-submit" class="button" type="submit">Subscribe Here!</button>
+        </div>
+      </fieldset>
+    </form>
+<!--
+** End Newsletter Form -->
+
+<!--
+** Begin Testimonial Section **
+-->
+  <div class="row break">
+    <h2 class="col-12">Why WU Fuego?</h2>
+  </div>
+  <div id="testimonial" class="row">
+      <blockquote><p>Place saver for participant testimony. Sweet roll sweet roll apple pie gummies liquorice candy toffee lemon drops. Candy muffin gummi bears fruitcake bear claw. Gummies soufflé tootsie roll I love wafer caramels brownie I love bear claw. Apple pie cookie jelly-o toffee. Liquorice icing tiramisu bear claw I love tiramisu marzipan. Dragée wafer croissant macaroon chocolate bar cookie ice cream gummi bears. Lollipop carrot cake biscuit. Apple pie cake apple pie pie I love jelly I love lollipop. Jelly beans candy sweet roll topping.<p></blockquote>
+        <p>&mdash; FirstName LastName </p>
+  </div>
+<!--
+** End Testimonial Section **
+-->
+
+
+
+<!--
+*** Begin Contact/Comment Form section ***
+-->
+<!-- Begin contact fieldset -->
+  <div class="row break">
+    <h2 class="col-12">How To Find Us</h2>
+  </div>
+    <form id="contact-form" class="forms">
+      <fieldset>
+        <legend>Contact Us</legend>
+          <p class="prompt">Thank you for taking the time to visit our page. We'd love to hear from you. Send a message and we'll get back to you!<br>
+            <span>Required fields are followed by<strong><abbr title="required">*</abbr></strong>.</span></p>
+          <div class="fields">
+            <label id="name-label" for="name" class="labels">
+              <strong>First Name</strong>
+              <abbr title="required">*</abbr>
+              <input id="name" type="text" placeholder="Nina" name="first-name" aria-label="Please enter your first name" class="inputs" required/>
+            </label>
+          </div>
+
+          <div class="fields">
+            <label id="last-name-label" for="last-name" class="labels">
+              <strong>Last Name</strong>
+              <abbr title="required">*</abbr>
+              <input id="last-name" type="text" placeholder="Simone" name="last-name" required pattern="[A-Za-z]+" aria-label="Please enter your last name" class="inputs"/>
+            </label>
+          </div>
+          <div class="fields">
+            <label id="email-label" for="contact-email" class="labels">
+              <strong>Email</strong>
+              <abbr title="required">*</abbr>
+
+              <input type="email" name="contact-email" id="contact-email" class="inputs" required placeholder="example@email.com" aria-label="* Please enter an email address to continue"/>
+            </label>
+          </div>
+          <div class="fields">
+            <label for="phone" class="labels">
+              <strong>Phone #</strong>
+              <input id="phone" type="tel" placeholder="888-555-1515" name="phone" aria-label="Type your answer here" class="inputs"/>
+            </label>
+          </div>
+          <div class="fields">
+            <label for="user-comments" class="labels">
+              <textarea id="user-comments" name="user-comments" class"input"
+              rows="5" cols="50"> Your comments...
+              </textarea>
+            </label>
+          </div>
+
+<!-- Begin Contact form submit button -->
+          <div id="contact-button">
+            <button id="contact-btn" class="button" type="submit">Contact Us</button>
+          </div>
+        </fieldset>
+<!-- End contact information fieldset -->
+<!-- end form submit button -->
+    </form>
+<!-- End From -->
+    </section>
+  </div>
+<!-- End Main Section -->
+<!-- Begin Footer Section -->
+  <div id="social-media" class="row break">
+    <div class="row">
+      <h3 class= col-12>Follow the Fuego on Social Media</h3>
+    </div>
+      <ul id="socialLinks" class="col-12">
+        <li><a href="mailto:placeholder@email-address" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+
+    <footer id="copyright" class="footer row">
+      <p><small>2019 built by christinatovar.com © 2019</small></p>
+      <p><small>Photos and video curtesy of members of WU Fuego</small></p>
+    </footer>
+  </div>
+<!-- End Footer Section -->
+
+
+<!-- End Container -->
+</body>
+</html>
