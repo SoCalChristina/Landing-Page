@@ -210,11 +210,11 @@ max-width: 100%;
 }
 
 /* Clear floats */
-.card::after, .row::after {
+/*.card::after, .row::after {
   content: "";
   clear: both;
   display: table;
-}
+}*/
 /* End Profile/About Cards */
 
 .iframe-container {
