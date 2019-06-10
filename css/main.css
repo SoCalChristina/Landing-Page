@@ -250,11 +250,6 @@ max-width: 100%;
   border-radius: 1rem;
 }
 
-/* On mouse-over, add a deeper shadow */
-.forms:hover {
-  box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.8);
-  }
-
 fieldset  {
   margin: auto;
   background-color: #e4e4e4;
@@ -263,6 +258,11 @@ fieldset  {
   max-width: 100%;
   padding: 2rem;
   color: #3f3f3f;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+fieldset:hover {
+  box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.8);
   }
 
 legend {
@@ -313,7 +313,7 @@ legend {
   }
 
 .button:hover {
-  background-color: lightblue;
+  background-color: #009900;
   color: white;
   }
 
