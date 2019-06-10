@@ -15,16 +15,11 @@ The following elements and sections are included:
 * A comment input form and button
 * Social media footer
 
-![screen shot of Product Landing Page](https:)
+![screen shot of Product Landing Page](https://github.com/SoCalChristina/Landing-Page/blob/master/images/landing-page-img.png?raw=true)
 
-## Purpose:
-This is a Reactjs Neighborhood Map app built as the final project of the Udacity Frontend Developer Nano Degree.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Getting Started:
+## Getting Started
 ### `Clone or fork repository.`
-(https://github.com/SoCalChristina/landing-page)
+(https://github.com/SoCalChristina/Landing-Page)
 
 
 ## Attributions
